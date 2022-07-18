@@ -6,23 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HEALTH ME PLEASE</title>
+  <title>MOBILE RASPBERRY PI REMOTE CONTROLLING</title>
   <meta name='description' content='Welcome to my portfolio'>
 
-  <link rel="canonical" href="http://localhost:4000/project/big-airplane">
+  <link rel="canonical" href="http://localhost:4000/project/raspi-wii">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HEALTH ME PLEASE – Peace Ritthas Blog">
-  <meta name="twitter:description" content="Healthy Me Please is an application on smartphone that a user could record his/her daily routine such as running, cycling, and calories burned. This application will be able to work with wearable devices like Fitbit, Pebble for tracking people’s activities record from their workout. The data from activities tracking will be stored in the application and could be shared to social network. There is also the challenge system, which a user can challenge other user to complete a healthcare mission and will receive unlocked badges as rewards if the mission complete, and earn the points to be ranked with other users.
+  <meta name="twitter:title" content="MOBILE RASPBERRY PI REMOTE CONTROLLING – Peace Ritthas Blog">
+  <meta name="twitter:description" content="I have discuss about the project “Mobile Raspberry Pi Remote Controlling” with Dr. Vincent Guyot at ESIEA. To know what is Raspberry Pi and what it can do I have learn from raspberrypi.org site. First I learnt how to install “Raspbian OS” to work with Raspberry Pi. Raspbian is an unofficial of Debian wheezy and will run on the Raspberry Pi. I install Raspbian on the SD card after that plug the SD card into the Raspberry Pi board to use it.
 ">
-  <meta name="twitter:image:src" content="http://localhost:4000/images/project-5.jpg">
+  <meta name="twitter:image:src" content="http://localhost:4000/images/project-4.jpg">
 
   <!-- Facebook OpenGraph -->
-  <meta property="og:title" content="HEALTH ME PLEASE – Peace Ritthas Blog">
-  <meta property="og:description" content="Healthy Me Please is an application on smartphone that a user could record his/her daily routine such as running, cycling, and calories burned. This application will be able to work with wearable devices like Fitbit, Pebble for tracking people’s activities record from their workout. The data from activities tracking will be stored in the application and could be shared to social network. There is also the challenge system, which a user can challenge other user to complete a healthcare mission and will receive unlocked badges as rewards if the mission complete, and earn the points to be ranked with other users.
+  <meta property="og:title" content="MOBILE RASPBERRY PI REMOTE CONTROLLING – Peace Ritthas Blog">
+  <meta property="og:description" content="I have discuss about the project “Mobile Raspberry Pi Remote Controlling” with Dr. Vincent Guyot at ESIEA. To know what is Raspberry Pi and what it can do I have learn from raspberrypi.org site. First I learnt how to install “Raspbian OS” to work with Raspberry Pi. Raspbian is an unofficial of Debian wheezy and will run on the Raspberry Pi. I install Raspbian on the SD card after that plug the SD card into the Raspberry Pi board to use it.
 ">
-  <meta property="og:image" content="http://localhost:4000/images/project-5.jpg">
+  <meta property="og:image" content="http://localhost:4000/images/project-4.jpg">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -77,6 +77,12 @@
               
                 
                 <li class="nav__item">
+                  <a href="/blog/" class="nav__link">Blog</a>
+                </li>
+                
+              
+                
+                <li class="nav__item">
                   <a href="/about/" class="nav__link">About</a>
                 </li>
                 
@@ -124,9 +130,9 @@
           
 <div class="container">
   <div class="c-page-heading">
-    <h1 class="c-page-heading__title">HEALTH ME PLEASE</h1>
+    <h1 class="c-page-heading__title">MOBILE RASPBERRY PI REMOTE CONTROLLING</h1>
     
-      <p class="c-page-heading__description">iOS Application</p>
+      <p class="c-page-heading__description">Embedded system</p>
     
   </div>
 </div>
@@ -138,7 +144,7 @@
   <div class="row">
     <div class="col col-12">
       <div class="c-page-image animate">
-        <img loading="lazy" src="/images/project-5.jpg" alt="">
+        <img loading="lazy" src="/images/project-4.jpg" alt="">
       </div>
     </div>
   </div>
@@ -146,27 +152,29 @@
           <!--bookshop-live end-->
 
   <div class="page animate">
-    <p>Healthy Me Please is an application on smartphone that a user could record his/her daily routine such as running, cycling, and calories burned. This application will be able to work with wearable devices like Fitbit, Pebble for tracking people’s activities record from their workout. The data from activities tracking will be stored in the application and could be shared to social network. There is also the challenge system, which a user can challenge other user to complete a healthcare mission and will receive unlocked badges as rewards if the mission complete, and earn the points to be ranked with other users.</p>
+    <p>I have discuss about the project “Mobile Raspberry Pi Remote Controlling” with Dr. Vincent Guyot at ESIEA. To know what is Raspberry Pi and what it can do I have learn from raspberrypi.org site. First I learnt how to install “Raspbian OS” to work with Raspberry Pi. Raspbian is an unofficial of Debian wheezy and will run on the Raspberry Pi. I install Raspbian on the SD card after that plug the SD card into the Raspberry Pi board to use it.</p>
 
-<p><img src="/images/image-example-3.jpg" alt="Palm trees" width="1200" height="900" /></p>
+<p><img src="/images/plugwii.jpg" alt="set up" width="1200" height="900" /></p>
 
-<p>Healthy Me Please developed in iOS. In parts of connection between application on smartphone and wearable, we will use libraries and API for wearable device to get a wearable device detected by a smartphone via Bluetooth. In the future, the application will be developed for more add-ons support and wearable devices compatibility to make it better because some wearable devices don’t support some smartphone’s operating system by now.</p>
+<p>I have learnt how to communicate between the Wii Remote and Raspberry Pi. At first, I receive bluetooth usb and Wii Remote from professor. The Wii Remote can connect to Raspberry Pi by bluetooth device. I setup the bluetooth on Raspberry Pi by plug it into the usb slot and install bluetooth package by this command line “sudo apt-get install –no-install-recommends bluetooth”. When the bluetooth package already installed in the Raspberry Pi, I can check the bluetooth status by type “sudo service bluetooth status” in command line. If bluetooth is working the terminal will show message “bluetooth is running”.
+To detect Wii remote on Raspberry Pi I have to type “hcitool scan” if Wii Remote was found it will show a message like “00:1E:02:8A:CD:A1 Nintendo RVL-CNT-01” on the screen. Before using Wii remote with raspberry pi I have to install CWIID MODULE by type “sudo apt-get install python-cwiid” and we have test its with the sample code on Raspberry Pi website.</p>
 
-<p><img src="/images/image-example-4.jpg" alt="Sea" width="1200" height="900" /></p>
+<p><img src="/images/samplecode.jpg" alt="sample code" width="1200" height="900" /></p>
 
-<p>Defecerit Sed isti ipsi, qui voluptate et dolore omnia metiuntur, nonne clamant sapienti plus semper adesse quod velit quam quod nolit? Quae quidem sapientes sequuntur duce natura tamquam videntes; Quod enim dissolutum sit, id esse sine sensu, quod autem sine sensu. Sunt omnia Longum est enim ad omnia respondere, quae a te dicta sunt. Nam cui proposito sit conservatio sui, necesse est huic partes quoque sui caras suo genere laudabiles servari.</p>
+<p>For the last, I have to write the program in C &amp; Python to control the robotics with Wiimote. The program will check the setupGPIO and then print the message to wait for a connection from Wiimote. If the connection succeeds the Wiimote will rumble and show the usage buttons message but during connection time out the program will quit. When Wiimote has connected successfully if the home button was pressed the program will start and the program will check buttons to control the directional movement of the robotic car. The program will work until the home button was pressed again.</p>
+
+<p><img src="/images/roboticcar.jpg" alt="robotic car" width="1200" height="900" /></p>
+
+<p>The program show Wiimote is connected and how to use</p>
+
+<p><img src="/images/startwiimote.jpg" alt="wii mote" width="1200" height="900" /></p>
+
+<p>You can use buttons or gyroscope to command the robot. Press button B to change mode between buttons and gyroscope</p>
+
+<p><img src="/images/modebutton.jpg" alt="mode change" width="1200" height="900" /></p>
 
   </div>
 
-  
-  <div class="project__navigation animate">
-    <a class="project__prev" href="/project/the-rocks">
-      <div class="project__box">
-        <span class="project__nav__info">Next Project</span>
-        <h2 class="project__nav__title">DATABASE MANAGEMENT SYSTEM FOR STOCK PHOTOGRAPHY WEBSITE<i class="ion ion-md-arrow-round-forward arrow-right"></i></h2>
-      </div>
-    </a>
-  </div>
   
 
 </div>
@@ -218,6 +226,10 @@
           
           <li class="footer_nav__item">
             <a href="/projects/" class="footer_nav__link">Projects</a>
+          </li>
+          
+          <li class="footer_nav__item">
+            <a href="/blog/" class="footer_nav__link">Blog</a>
           </li>
           
           <li class="footer_nav__item">
